@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lmy.ticketreservationpractice.activity.CityActivity">
+
+    <LinearLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#fa3682de"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView_back"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/fanhui" />
+
+        <TextView
+            android:id="@+id/textView0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="50dp"
+            android:gravity="center"
+            android:text="选择城市"
+            android:textAppearance="@android:style/TextAppearance.Material.Title"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout30">
+
+
+        <TextView
+            android:id="@+id/toReservation"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#fa3682de"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="车票预定"
+            android:textColor="#ffffffff"
+
+            android:textSize="20sp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/toSesrch"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#fa3682de"
+            android:clickable="true"
+            android:gravity="center"
+
+            android:text="车次查询"
+            android:textColor="#ffffffff"
+            android:textSize="20sp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/toInfo"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#fa3682de"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="个人信息"
+            android:textColor="#ffffffff"
+            android:textSize="20sp"
+            />
+
+
+        <TextView
+            android:id="@+id/toAbout"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#fa3682de"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="关于我们"
+            android:textColor="#ffffffff"
+            android:textSize="20sp"
+            />
+
+
+    </LinearLayout>
+
+    <SearchView
+        android:id="@+id/searchView_city"
+        android:layout_width="344dp"
+        android:layout_height="31dp"
+        android:layout_below="@+id/constraintLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:iconifiedByDefault="false"
+        android:queryHint="请输入车站名"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        app:layout_constraintVertical_bias="0.0">
+
+    </SearchView>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView_city"
+        android:background="#fffccf"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/linearLayout29"
+        android:layout_above="@+id/linearLayout30"
+        android:layout_centerHorizontal="true">
+
+    </ListView>
+    <LinearLayout
+        android:id="@+id/linearLayout29"
+        android:layout_width="344dp"
+        android:layout_height="34dp"
+        android:layout_alignStart="@+id/searchView_city"
+        android:layout_below="@+id/searchView_city"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        app:layout_constraintVertical_bias="0.120000005">
+
+        <ImageView
+            android:id="@+id/imageView_location"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/location2" />
+
+        <TextView
+            android:id="@+id/textView_location"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.76"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:text="我的位置"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#8a8a8a" />
+    </LinearLayout>
+
+
+</RelativeLayout>

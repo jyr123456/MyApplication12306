@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_titlebar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.lmy.ticketreservationpractice.activity.MainActivity">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:background="#fe073874"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="1dp"
+        android:id="@+id/constraintLayout2">
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="代售点查询"
+        android:textAppearance="@android:style/TextAppearance.Material.Title"
+        android:textColor="#ffffffff"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/CL1"
+        android:layout_width="96dp"
+        android:layout_height="52dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="518dp"
+        android:background="#fe073874">
+
+        <TextView
+            android:id="@+id/toReservation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="车票预定"
+            android:textColor="#ffffffff"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.514" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/CL2"
+        android:layout_width="96dp"
+        android:layout_height="52dp"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="518dp"
+        android:background="#fe073874">
+        <TextView
+            android:id="@+id/toSesrch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="出行向导"
+            android:textColor="#ffffffff"
+            android:clickable="true"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.514" />
+
+
+    </android.support.constraint.ConstraintLayout>
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/CL3"
+        android:layout_width="96dp"
+        android:layout_height="52dp"
+        tools:layout_editor_absoluteX="192dp"
+        tools:layout_editor_absoluteY="518dp"
+        android:background="#fe073874">
+
+        <TextView
+            android:id="@+id/toInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单查询"
+            android:textColor="#ffffffff"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.514" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/CL4"
+        android:layout_width="96dp"
+        android:layout_height="52dp"
+        tools:layout_editor_absoluteX="288dp"
+        tools:layout_editor_absoluteY="518dp"
+        android:background="#fe073874"
+        >
+
+        <TextView
+            android:id="@+id/toAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个人信息"
+            android:textColor="#ffffffff"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.514" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="86dp"
+        android:weightSum="1"
+        android:gravity="center">
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.11"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="173dp" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text="省"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.01" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text="市"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        <Spinner
+            android:id="@+id/spinner4"
+            android:layout_width="90dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text="区"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="69dp"
+        android:layout_height="40dp"
+        android:text="查询"
+        tools:layout_editor_absoluteX="299dp"
+        tools:layout_editor_absoluteY="143dp" />
+
+
+</android.support.constraint.ConstraintLayout>
